@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin:20px;
+        }
+        .error { 
+            color: red; 
+            font-size: 14px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <span class="error" id="emailError"></span>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <span class="error" id="passwordError"></span>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script> <!-- Linking external JS file -->
+</body>
+</html>
