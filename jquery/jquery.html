@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>WELCOME TO PAGE</h1>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <br>
+    <button id="secretBtn">I am Secret</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("#secretBtn").show();
+            });
+            $("#hide").click(function () {
+                $("#secretBtn").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
